@@ -28,6 +28,8 @@ import java.util.List;
  *         Time: 上午11:56
  */
 public class GenerateAction extends AnAction {
+
+    @Override
     public void actionPerformed(AnActionEvent e) {
         PsiMethod psiMethod = getPsiMethodFromContext(e);
         generateO2OMethod(psiMethod);
